@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato";
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+ul.navbar li a {
+  display: inline-block;
+padding: 16px 40px; /*top and bottom 16px and left and right 20px;*/
+text-decoration: none;
+color: darkslategray;
+}
+
+ul.navbar li a:hover {
+ font-weight: bold;
+}
+
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav {
+  height: 5%;
+  background: -webkit-linear-gradient(lightblue, ivory, pink);
+  background: -o-linear-gradient(lightblue, ivory, pink); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
+}
