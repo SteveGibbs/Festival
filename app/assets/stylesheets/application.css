@@ -28,7 +28,7 @@ ul.navbar li a {
   display: inline-block;
 padding: 16px 40px; /*top and bottom 16px and left and right 20px;*/
 text-decoration: none;
-color: darkslategray;
+color: darkslategray
 }
 
 ul.navbar li a:hover {
@@ -42,9 +42,71 @@ li {
 }
 
 nav {
-  height: 5%;
+  height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
   background: -o-linear-gradient(lightblue, ivory, pink); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
   background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
+}
+.main-page {
+  display: inline-block;
+}
+text.main-banner {
+  position: absolute;
+  z-index: 2;
+  margin-top: -50%;
+  margin-left: -50%;
+  width: 100vw;
+  font-size: 60px;
+  color: ivory;
+}
+
+text.main-banner:hover {
+  font-weight: bold;
+}
+
+
+p.main-banner:hover {
+  font-weight: bold;
+}
+
+img.main-image {
+  position: relative;
+  width: 100vw;
+}
+
+
+/*h1.main-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: middle;
+  display:inline-table;
+}*/
+
+
+p.main-text {
+  font-size: 24px;
+  color: darkslategray;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+ul.main-list {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+li.main-page-list {
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 20px;
+  width: 30%;
+}
+img.tertiary-image {
+  height: 70%;
+  width: 70%;
 }
