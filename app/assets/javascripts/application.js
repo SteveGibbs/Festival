@@ -17,11 +17,38 @@
 
 console.log("this is a test");
 
-// document.getElementById("test").onclick = function() {
-//   console.log("this worked!");
-// };
 
 $(document).on("turbolinks:load", function() {
+
+  // mapInit = false;
+  // if ( $("#map").length !== 0 ) {
+  //   initMap();
+  // }
+
+
+  // LOGIC FOR DISPLAYING LOCATION MAP USING GOOGLE API - SIMPLE MAP
+var map;
+var mapInit = false;
+function initMap() {
+  if ( mapInit || $("#map").length === 0 ) { return false; }
+
+   var myLatLng = {lat: -33.9092452, lng: 151.1944616};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 18
+  });
+
+  var marker = new google.maps.Marker({
+          position: myLatLng,
+          label: "!",
+          map: map,
+          title: ''
+        });
+  mapInit = true;
+}
+initMap();
+
 var acc = document.getElementsByClassName("accordion");
 console.log(acc);
 var i;
@@ -39,10 +66,3 @@ for (i = 0; i < acc.length; i++) {
   };
 }
 });
-// // Get the button, and when the user clicks on it, execute myFunction
-// document.getElementById("myBtn").onclick = function() {myFunction()};
-//
-// /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
