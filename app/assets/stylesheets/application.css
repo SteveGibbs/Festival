@@ -56,7 +56,7 @@ text.main-banner {
   z-index: 2;
   margin-top: -50%;
   margin-left: -50%;
-  width: 100%;
+  width: 100vw;
   font-size: 60px;
   color: ivory;
 }
@@ -72,7 +72,7 @@ p.main-banner:hover {
 
 img.main-image {
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 
