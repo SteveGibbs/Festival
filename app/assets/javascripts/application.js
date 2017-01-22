@@ -32,8 +32,7 @@ var mapInit = false;
 function initMap() {
   if ( mapInit || $("#map").length === 0 ) { return false; }
 
-   var myLatLng = {lat: -33.9092452, lng: 151.1944616};
-
+   var myLatLng = {lat: -34.20579, lng: 150.857358};
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
     zoom: 18

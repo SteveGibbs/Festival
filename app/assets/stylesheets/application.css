@@ -58,7 +58,7 @@ text.main-banner {
   margin-left: -50%;
   width: 100vw;
   font-size: 60px;
-  color: white;
+  color: ivory;
 }
 
 text.main-banner:hover {
@@ -74,26 +74,18 @@ img.main-image {
   position: relative;
   width: 100vw;
 }
-
-
-/*h1.main-banner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  vertical-align: middle;
-  display:inline-table;
-}*/
-
+img.secondary-image {
+    text-align: center;
+    padding: 0 20%;
+    width: 60vw;
+    }
 
 p.main-text {
   font-size: 24px;
   color: darkslategray;
   text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 ul.main-list {
