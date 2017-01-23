@@ -14,7 +14,6 @@
  *= require_self
  */
 
-
 html, body {
   height: 100%;
   width: 100%;
@@ -23,41 +22,41 @@ html, body {
   padding: 0;
   text-align: center;
 }
-
 ul.navbar li a {
-display: inline-block;
-padding: 16px 40px; /*top and bottom 16px and left and right 20px;*/
-text-decoration: none;
-color: darkslategray
+  display: inline-block;
+  padding: 16px 40px;
+  /*top and bottom 16px and left and right 20px;*/
+  text-decoration: none;
+  color: darkslategray
 }
-
 ul.navbar li a:hover {
- font-weight: bold;
+  font-weight: bold;
 }
-
-
 li {
   display: inline-block;
   list-style-type: none;
 }
-
 nav {
   height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
-  background: -o-linear-gradient(lightblue, ivory, pink); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
+  background: -o-linear-gradient(lightblue, ivory, pink);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lightblue, ivory, pink);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lightblue, ivory, pink);
+  /* Standard syntax */
 }
-
 footer {
   margin-top: 5%;
   height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
-  background: -o-linear-gradient(lightblue, ivory, pink); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
+  background: -o-linear-gradient(lightblue, ivory, pink);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lightblue, ivory, pink);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lightblue, ivory, pink);
+  /* Standard syntax */
 }
-
 .main-page {
   display: inline-block;
 }
@@ -70,26 +69,21 @@ text.main-banner {
   font-size: 60px;
   color: ivory;
 }
-
 text.main-banner:hover {
   font-weight: bold;
 }
-
-
 p.main-banner:hover {
   font-weight: bold;
 }
-
 img.main-image {
   position: relative;
   width: 100vw;
 }
 img.secondary-image {
-    text-align: center;
-    padding: 0 20%;
-    width: 60vw;
-    }
-
+  text-align: center;
+  padding: 0 20%;
+  width: 60vw;
+}
 p.main-text {
   font-size: 24px;
   color: darkslategray;
@@ -97,7 +91,6 @@ p.main-text {
   margin-left: 20%;
   margin-right: 20%;
 }
-
 ul.main-list {
   padding: 0;
   margin-left: 5%;
@@ -115,7 +108,6 @@ img.tertiary-image {
   height: 70%;
   width: 70%;
 }
-
 .sponsors {
   text-align: center;
   margin-top: 5%;
@@ -127,11 +119,10 @@ img.tertiary-image {
   border-width: medium;
   height: 160px;
 }
-
 .sponsors-text {
   margin-top: 5%;
-
 }
+
 /*.sponsors-text {
   animation-duration: 5s;
   animation-name: slidein;
@@ -150,60 +141,48 @@ img.tertiary-image {
 }*/
 
 .slick-slider {
-        /*width: 960px;*/
-        width: 50vw;
+  /*width: 960px;*/
+  width: 50vw;
+}
+img.autoplay {
+  /*width: 960px*/
+  width: 50vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  text.main-banner {
+    font-size: 40px;
   }
-
-  img.autoplay {
-    /*width: 960px*/
-    width: 50vw;
+}
+@media only screen and (max-width: 736px) {
+  text.main-banner {
+    font-size: 30px;
   }
-
-  @media only screen and (max-width: 1024px) {
-
-    text.main-banner {
-      font-size: 40px;
-    }
-    
+  h1.banner {
+    font-size: 24px;
   }
-
-  @media only screen and (max-width: 736px) {
-
-    text.main-banner {
-      font-size: 30px;
-    }
-
-    h1.banner {
-      font-size: 24px;
-    }
-    h3.second-banner {
-      font-size: 24px;
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-
+  h3.second-banner {
+    font-size: 24px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   p.main-text {
     font-size: 18px;
   }
-
-a {
-  font-size: 14px;
-}
-p.location {
-  font-size: 12px;
-  margin-left: -15%;
-  margin-right: -15%;
-}
-ul.navbar li a {
-padding: 12px 10px; /*top and bottom 12px and left and right 10px;*/
-}
-
+  a {
+    font-size: 14px;
   }
-
-
-
+  p.location {
+    font-size: 12px;
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+  ul.navbar li a {
+    padding: 12px 10px;
+    /*top and bottom 12px and left and right 10px;*/
+  }
+}
 @media only screen and (max-width: 414px) {
-
   text.main-banner {
     font-size: 20px;
   }
@@ -213,22 +192,26 @@ padding: 12px 10px; /*top and bottom 12px and left and right 10px;*/
   h3.second-banner {
     font-size: 12px;
   }
+  p.main-text {
+    font-size: 12px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p.location {
+    font-size: 9px;
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+  ul.navbar li a {
+    padding: 12px 10px;
+    /*top and bottom 12px and left and right 10px;*/
+  }
+  button.accordion {
+      width: 80%;
+        }
 
-p.main-text {
-  font-size: 12px;
-}
-
-a {
-  font-size: 10px;
-}
-
-p.location {
-  font-size: 9px;
-  margin-left: -15%;
-  margin-right: -15%;
-}
-ul.navbar li a {
-padding: 12px 10px; /*top and bottom 12px and left and right 10px;*/
-}
-
+  p.panel-style {
+    padding: 0 10%;
+    }
 }
