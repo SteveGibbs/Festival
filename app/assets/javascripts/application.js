@@ -75,9 +75,9 @@ for (i = 0; i < acc.length; i++) {
 
 function navBarFunction() {
     var navigationBar = document.getElementById("myNavBar");
-    if (navigationBar.className === "navBar") {
+    if (navigationBar.className === "navbar") {
         navigationBar.className += " responsive";
     } else {
-        navigationBar.className = "navBar";
+        navigationBar.className = "navbar";
     }
 }

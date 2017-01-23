@@ -146,6 +146,18 @@ img.tertiary-image {
   }
 }
 
+a.btn-buy {
+  color: red;
+  background: linear-gradient(lightblue, ivory, pink);
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  font-size: 25px;
+  border-radius: 50%;
+  text-decoration: none;
+  padding: 10px;
+}
+
 .slick-slider {
   /*width: 960px;*/
   width: 50vw;
@@ -154,6 +166,9 @@ img.autoplay {
   /*width: 960px*/
   width: 50vw;
 }
+
+
+
 
 @media only screen and (max-width: 1024px) {
   text.main-banner {
@@ -187,6 +202,32 @@ img.autoplay {
     padding: 12px 10px;
     /*top and bottom 12px and left and right 10px;*/
   }
+  ul.navbar li {display: none;}
+    ul.navbar li.icon {
+    float: left;
+      display: inline-block;
+    }
+    ul.navbar.responsive {position: relative;}
+    ul.navbar.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    ul.navbar.responsive li {
+      float: none;
+      display: inline;
+    }
+    ul.navbar.responsive li a {
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive {
+      z-index: 10;
+      width: 100px;
+    }
+    ul#myNavBar {
+      background-color: white;
+    }
 }
 @media only screen and (max-width: 414px) {
   text.main-banner {
@@ -220,4 +261,7 @@ img.autoplay {
   p.panel-style {
     padding: 0 10%;
     }
+
+
+
 }
