@@ -153,3 +153,78 @@ img.tertiary-image {
 
         width: 960px;
   }
+
+  @media only screen and (max-width: 1024px) {
+
+    text.main-banner {
+      font-size: 40px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 736px) {
+
+    text.main-banner {
+      font-size: 30px;
+    }
+
+    h1.banner {
+      font-size: 24px;
+    }
+    h3.second-banner {
+      font-size: 24px;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+  p.main-text {
+    font-size: 18px;
+  }
+
+a {
+  font-size: 18px;
+}
+p.location {
+  font-size: 12px;
+  margin-left: -15%;
+  margin-right: -15%;
+}
+ul.navbar li a {
+padding: 12px 10px; /*top and bottom 12px and left and right 10px;*/
+}
+
+  }
+
+
+
+@media only screen and (max-width: 414px) {
+
+  text.main-banner {
+    font-size: 20px;
+  }
+  h1.banner {
+    font-size: 20px;
+  }
+  h3.second-banner {
+    font-size: 12px;
+  }
+
+p.main-text {
+  font-size: 12px;
+}
+
+a {
+  font-size: 12px;
+}
+
+p.location {
+  font-size: 12px;
+  margin-left: -15%;
+  margin-right: -15%;
+}
+ul.navbar li a {
+padding: 12px 10px; /*top and bottom 12px and left and right 10px;*/
+}
+
+}

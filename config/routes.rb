@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   get 'pages/gallery'
 
+  get 'pages/food'
+
   resources :products, :orders, :pages
   #
   # get 'orders/index'
