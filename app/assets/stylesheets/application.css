@@ -48,6 +48,16 @@ nav {
   background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
   background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
 }
+
+footer {
+  margin-top: 5%;
+  height: 60px;
+  background: -webkit-linear-gradient(lightblue, ivory, pink);
+  background: -o-linear-gradient(lightblue, ivory, pink); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lightblue, ivory, pink); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lightblue, ivory, pink); /* Standard syntax */
+}
+
 .main-page {
   display: inline-block;
 }
@@ -122,7 +132,7 @@ img.tertiary-image {
   margin-top: 5%;
 
 }
-.sponsors-text {
+/*.sponsors-text {
   animation-duration: 5s;
   animation-name: slidein;
   animation-iteration-count: infinite;
@@ -137,4 +147,9 @@ img.tertiary-image {
     margin-left: 0%;
     width: 100%;
   }
-}
+}*/
+
+.slick-slider {
+
+        width: 960px;
+  }

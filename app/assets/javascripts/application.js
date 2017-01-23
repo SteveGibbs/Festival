@@ -57,4 +57,18 @@ for (i = 0; i < acc.length; i++) {
         }
   };
 }
+// CAROUSEL SLIDER FROM SLICK
+  $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+
+  $('.slick-prev').html('<');
+  $('.slick-next').html('>');
+
+
+
 });

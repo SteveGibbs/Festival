@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   get 'pages/activities'
 
+  get 'pages/gallery'
+
   resources :products, :orders, :pages
   #
   # get 'orders/index'

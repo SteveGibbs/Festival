@@ -43,5 +43,30 @@
 
     <%= yield %>
 
+<footer>
+  <div class="stylenav grad">
+      <ul class="navbar">
+  <li>
+      <%= link_to("HOME", pages_index_path) %>
+  </li>
+  <li>
+      <%= link_to("BUY TICKETS", products_path) %>
+  </li>
+  <li>
+      <%= link_to("FAQ", pages_faq_path) %>
+  </li>
+  <li>
+      <%= link_to("NEWS", pages_news_path) %>
+  </li>
+  <li class="icon">
+      <a href="javascript:void(0);" onclick="navBarFunction()">&#9776;</a>
+  </li>
+</ul>
+</div>
+  <p>
+    Amazing footer to put here
+  </p>
+  </footer>
+
 </body>
 </html>
