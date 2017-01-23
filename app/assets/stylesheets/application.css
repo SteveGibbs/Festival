@@ -36,6 +36,7 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+
 nav {
   height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
@@ -46,6 +47,11 @@ nav {
   background: linear-gradient(lightblue, ivory, pink);
   /* Standard syntax */
 }
+
+ul.navbar li.icon {
+  display: none;
+}
+
 footer {
   margin-top: 5%;
   height: 60px;
@@ -63,8 +69,8 @@ footer {
 text.main-banner {
   position: absolute;
   z-index: 2;
-  margin-top: -50%;
-  margin-left: -50%;
+  margin-top: -50vw;
+  margin-left: -50vw;
   width: 100vw;
   font-size: 60px;
   color: ivory;
@@ -123,7 +129,7 @@ img.tertiary-image {
   margin-top: 5%;
 }
 
-/*.sponsors-text {
+.sponsors-text {
   animation-duration: 5s;
   animation-name: slidein;
   animation-iteration-count: infinite;
@@ -138,7 +144,7 @@ img.tertiary-image {
     margin-left: 0%;
     width: 100%;
   }
-}*/
+}
 
 .slick-slider {
   /*width: 960px;*/

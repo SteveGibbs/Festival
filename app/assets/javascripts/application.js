@@ -57,6 +57,8 @@ for (i = 0; i < acc.length; i++) {
         }
   };
 }
+
+
 // CAROUSEL SLIDER FROM SLICK
   $('.autoplay').slick({
     slidesToShow: 3,
@@ -69,6 +71,13 @@ for (i = 0; i < acc.length; i++) {
   $('.slick-prev').html('<');
   $('.slick-next').html('>');
 
-
-
 });
+
+function navBarFunction() {
+    var navigationBar = document.getElementById("myNavBar");
+    if (navigationBar.className === "navBar") {
+        navigationBar.className += " responsive";
+    } else {
+        navigationBar.className = "navBar";
+    }
+}
