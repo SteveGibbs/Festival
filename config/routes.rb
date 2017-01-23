@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
   get 'pages/news'
 
+  get 'pages/music'
+
+  get 'pages/activities'
+
   resources :products, :orders, :pages
   #
   # get 'orders/index'

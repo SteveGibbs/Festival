@@ -89,16 +89,52 @@ p.main-text {
 }
 
 ul.main-list {
+  padding: 0;
   margin-left: 5%;
   margin-right: 5%;
 }
 li.main-page-list {
   font-size: 20px;
   color: blue;
+  margin-left: -5%;
+  margin-right: -5%;
   margin-bottom: 20px;
-  width: 30%;
+  width: 33.333%;
 }
 img.tertiary-image {
   height: 70%;
   width: 70%;
+}
+
+.sponsors {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: solid;
+  border-color: darkslategray;
+  background: ivory;
+  border-width: medium;
+  height: 160px;
+}
+
+.sponsors-text {
+  margin-top: 5%;
+
+}
+.sponsors-text {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

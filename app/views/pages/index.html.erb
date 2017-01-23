@@ -24,23 +24,27 @@
     <p class="main-text">A CELEBRATION OF ECLECTIC MUSIC FROM SOME OF THE WORLD'S BEST ARTISTS. BRING YOUR FRIENDS AND FAMILY TO ONE OF THE MOST ATMOSPHERIC FESTIVALS HELD NEXT TO THE FAMOUS BOOGALOO RANGES.</p>
     <br>
     <br>
+    <br>
 
     <%= link_to("BUY TICKETS", products_path) %>
 
+    <br>
+    <br>
+
     <ul class="main-list">
 
-        <li class="main-page-list">MUSIC
+        <li class="main-page-list"><%= link_to("MUSIC", pages_music_path) %>
             <br>
             <br>
             <%= image_tag("audience.jpg", :class => "tertiary-image") %>
             <br>
         </li>
-        <li class="main-page-list">ACTIVITIES
+        <li class="main-page-list"><%= link_to("ACTIVITIES", pages_activities_path) %>
             <br>
             <br>
             <%= image_tag("festival.jpg", :class => "tertiary-image") %>
             <br></li>
-        <li class="main-page-list">FAQ<br>
+        <li class="main-page-list"><%= link_to("FAQ", pages_faq_path) %><br>
             <br>
             <%= image_tag("flowerchild.jpg", :class => "tertiary-image") %>
             <br>
@@ -58,7 +62,7 @@
             <%= image_tag("picnic.jpg", :class => "tertiary-image") %>
             <br>
         </li>
-        <li class="main-page-list">LOCATION
+        <li class="main-page-list"><%= link_to("LOCATION", pages_location_path) %>
             <br>
             <br>
             <%= image_tag("balloon.jpg", :class => "tertiary-image") %>
@@ -66,5 +70,8 @@
         </li>
     </ul>
 
-    <h3 class="sponsors">To be announced</h3>
+<div class="sponsors">
+    <h3 class="sponsors-text">SPONSOR BANNER HERE</h3>
+</div>
+
 </div>

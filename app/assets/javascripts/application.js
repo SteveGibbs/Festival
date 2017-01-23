@@ -20,8 +20,8 @@ console.log("this is a test");
 
 $(document).on("turbolinks:load", function() {
 
-
-initMap = function (){
+window.initMap = function (){
+        if ( mapInit || $("#map").length === 0 ) { return false; }
         var boogaloo = {lat: -34.20579, lng: 150.857358};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
@@ -31,7 +31,14 @@ initMap = function (){
           position: boogaloo,
           map: map
         });
+          mapInit = true;
       };
+
+      var mapInit=false;
+      mapInit = false;
+        if ( $("#map").length !== 0 ) {
+          window.initMap();
+        }
 
 
 var acc = document.getElementsByClassName("accordion");
