@@ -36,7 +36,6 @@ li {
   display: inline-block;
   list-style-type: none;
 }
-
 nav {
   height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
@@ -47,11 +46,9 @@ nav {
   background: linear-gradient(lightblue, ivory, pink);
   /* Standard syntax */
 }
-
 ul.navbar li.icon {
   display: none;
 }
-
 footer {
   margin-top: 5%;
   height: 60px;
@@ -128,7 +125,6 @@ img.tertiary-image {
 .sponsors-text {
   margin-top: 5%;
 }
-
 .sponsors-text {
   animation-duration: 5s;
   animation-name: slidein;
@@ -139,23 +135,18 @@ img.tertiary-image {
     margin-left: 100%;
     width: 200%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-
 a.main-list {
   color: darkslategray;
   font-size: 16px;
 }
-
 a.main-list:hover {
   font-weight: bold;
 }
-
-
 a.btn-buy {
   color: red;
   background: linear-gradient(lightblue, ivory, pink);
@@ -167,7 +158,6 @@ a.btn-buy {
   text-decoration: none;
   padding: 10px;
 }
-
 .slick-slider {
   /*width: 960px;*/
   width: 50vw;
@@ -176,19 +166,16 @@ img.autoplay {
   /*width: 960px*/
   width: 50vw;
 }
-
 .main-foot {
   vertical-align: middle;
   color: darkslategray;
   background: linear-gradient(lightgray, ivory, lightgray);
   height: 180px;
 }
-
 p {
   margin-left: 10%;
   margin-right: 10%;
 }
-
 @media only screen and (max-width: 1024px) {
   text.main-banner {
     font-size: 40px;
@@ -221,32 +208,36 @@ p {
     padding: 12px 10px;
     /*top and bottom 12px and left and right 10px;*/
   }
-  ul.navbar li {display: none;}
-    ul.navbar li.icon {
+  ul.navbar li {
+    display: none;
+  }
+  ul.navbar li.icon {
     float: left;
-      display: inline-block;
-    }
-    ul.navbar.responsive {position: relative;}
-    ul.navbar.responsive li.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    ul.navbar.responsive li {
-      float: none;
-      display: inline;
-    }
-    ul.navbar.responsive li a {
-      display: block;
-      text-align: left;
-    }
-    .navbar.responsive {
-      z-index: 10;
-      width: 100px;
-    }
-    ul#myNavBar {
-      background-color: white;
-    }
+    display: inline-block;
+  }
+  ul.navbar.responsive {
+    position: relative;
+  }
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive {
+    z-index: 10;
+    width: 100px;
+  }
+  ul#myNavBar {
+    background-color: white;
+  }
 }
 @media only screen and (max-width: 414px) {
   text.main-banner {
@@ -274,15 +265,12 @@ p {
     /*top and bottom 12px and left and right 10px;*/
   }
   button.accordion {
-      width: 80%;
-        }
-
+    width: 80%;
+  }
   p.panel-style {
     padding: 0 10%;
-    }
-    a.main-list {
-      font-size: 10px;
-    }
-
-
+  }
+  a.main-list {
+    font-size: 10px;
+  }
 }
