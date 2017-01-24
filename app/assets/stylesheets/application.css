@@ -184,6 +184,10 @@ img.autoplay {
   height: 180px;
 }
 
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 @media only screen and (max-width: 1024px) {
   text.main-banner {
