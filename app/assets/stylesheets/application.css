@@ -146,11 +146,21 @@ img.tertiary-image {
   }
 }
 
+a.main-list {
+  color: darkslategray;
+  font-size: 16px;
+}
+
+a.main-list:hover {
+  font-weight: bold;
+}
+
+
 a.btn-buy {
   color: red;
   background: linear-gradient(lightblue, ivory, pink);
   border-style: solid;
-  border-color: black;
+  border-color: lightslategray;
   border-width: thin;
   font-size: 25px;
   border-radius: 50%;
@@ -167,7 +177,12 @@ img.autoplay {
   width: 50vw;
 }
 
-
+.main-foot {
+  vertical-align: middle;
+  color: darkslategray;
+  background: linear-gradient(lightgray, ivory, lightgray);
+  height: 180px;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -261,7 +276,9 @@ img.autoplay {
   p.panel-style {
     padding: 0 10%;
     }
-
+    a.main-list {
+      font-size: 10px;
+    }
 
 
 }

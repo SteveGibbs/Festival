@@ -44,28 +44,35 @@
     <%= yield %>
 
 <footer>
-  <div class="stylenav grad">
-      <ul class="navbar" id="myNavBar">
-  <li>
-      <%= link_to("HOME", pages_index_path) %>
-  </li>
-  <li>
-      <%= link_to("BUY TICKETS", products_path) %>
-  </li>
-  <li>
-      <%= link_to("FAQ", pages_faq_path) %>
-  </li>
-  <li>
-      <%= link_to("LOCATION", pages_location_path) %>
-  </li>
-  <li class="icon">
-      <a href="javascript:void(0);" onclick="navBarFunction()">&#9776;</a>
-  </li>
-</ul>
+  </div>
+<div class="main-foot">
+
+    <h3>FESTIVAL DE MUSICA AT BOOGALOO</h3>
+    <h3>1 APRIL 2018</h3>
+
+    <div class="stylenav grad">
+        <ul class="navbar" id="myNavBar">
+    <li>
+        <%= link_to("HOME", pages_index_path) %>
+    </li>
+    <li>
+        <%= link_to("BUY TICKETS", products_path) %>
+    </li>
+    <li>
+        <%= link_to("FAQ", pages_faq_path) %>
+    </li>
+    <li>
+        <%= link_to("LOCATION", pages_location_path) %>
+    </li>
+    <li class="icon">
+        <a href="javascript:void(0);" onclick="navBarFunction()">&#9776;</a>
+    </li>
+  </ul>
+    <p>Website designed by Steve Gibbs</p>
+
 </div>
-  <p>
-    Amazing footer to put here
-  </p>
+
+
   </footer>
 
 </body>
