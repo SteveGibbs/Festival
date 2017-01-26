@@ -1,0 +1,16 @@
+<%= form_for @product do |item| %>
+
+<p>Product Name</p>
+<%=item.text_field :product_name, :required => true %>
+<p>Product Description</p>
+<%=item.text_area :product_desc1, :required => true %>
+<p>Additional Description</p>
+<%=item.text_area :product_desc2, :required => true %>
+<p>Price</p>
+<%=item.number_field :price, :required => true %>
+<p>Image</p>
+<%=item.text_field :image, :required => true %>
+<p>Brand</p>
+<%=item.text_field :brand_id, :required => true %>
+<%= item.submit "Submit", :class=> "submit_format" %>
+<%end%>
