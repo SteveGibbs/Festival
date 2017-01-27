@@ -4,13 +4,39 @@
 <% @cart.items.each do |item| %>
 
 <ul>
-    <li>Product:
+    <li class="cart">Product:
         <%= item.product.product_name %></li>
-    <li>Price:
+    <li class="cart">Price:
         <%= number_to_currency(item.product.price) %></li>
-    <li>Quantity:
+    <li class="cart">Quantity:
         <%= item.quantity %></li>
 </ul>
 <% end %>
 
-  <%= link_to "Checkout", orders_path, method: "post" %>
+<h4>Subtotal:
+    <%= number_to_currency(@cart.subtotal) %></h4>
+<h4>GST (10%):
+    <%= number_to_currency(@cart.tax * @cart.subtotal) %></h4>
+<h4>Shipping:
+    <%= number_to_currency(@cart.shipping) %></h4>
+<h3>TOTAL:
+    <%= number_to_currency(@cart.total) %></h3>
+
+
+<br>
+<hr>
+<br>
+
+
+
+  <h3>Add My Details</h3>
+
+  <fieldset>
+      <legend>Enter payment details</legend>
+
+      <%= render "form" %>
+  </fieldset>
+<br>
+<br>
+<br>
+<%= link_to "Checkout", orders_path, method: "post", :class=>"btn-buy" %>

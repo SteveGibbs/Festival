@@ -1,22 +1,25 @@
 <h1>Current Cart</h1>
 
-<p>Cart ID:
-    <%= @cart.id %></p>
+<!-- <p>Cart ID:
+    <%#= @cart.id %></p> -->
 <hr>
 
 <% if @cart.items.length > 0  %>
 <% @cart.items.each do |item| %>
 <ul>
 
-    <li>Product:
+    <li class="cart">Product:
         <%= item.product.product_name %></li>
-    <li>Price:
+    <li class="cart">Price:
         <%=number_to_currency(item.product.price)%></li>
-    <li>Quantity:
+    <li class="cart">Quantity:
         <%= item.quantity %></li>
-    <li>Product ID:
-        <%= item.product_id %></li>
+    <!-- <li>Product ID:
+        <%#= item.product_id %></li> -->
 
+    <li class="cart"><%= link_to "+", item_add_path(:id => item), method: :post, :class=>"main-list cart-1" %></li>
+    <li><%= link_to "-", item_reduce_path(:id => item), method: :post, :class=>"main-list cart-1" %></li>
+    <li><%= link_to "Remove", item_path(item), method: :delete, :class=>"main-list cart-1" %></li>
 </ul>
 <!--note there is no order id as order has not been created yet - just items in a shopping cart  -->
 <!-- <li>Historical Price <%=item.historical_price %></li>
@@ -27,11 +30,22 @@
         <%= number_to_currency(@cart.subtotal) %></p>
 </ul>
 <br>
-<%= button_to "Continue Shopping", products_path, method: :get, class: 'case3a' %>
-
 <br>
-<%= link_to "Empty cart", cart_path(@cart), method: :delete, data: {confirm: "Are you sure you want to empty your cart?"} %>
+<%#= link_to "Confirm Order", new_order_path, :class=>"btn-buy" %>
+<br>
+<br>
+<ul>
+    <li>
+    <%= button_to "Checkout", new_order_path, method: :get, :class=>"btn-shop" %>
+</li>
+    <li>
+        <%= button_to "Continue Shopping", products_path, method: :get, class: 'btn-shop' %>
+    </li>
+    <li>
+        <%= button_to "Empty cart", cart_path(@cart), method: :delete, data: {confirm: "Are you sure you want to empty your cart?"}, class: 'btn-shop' %>
+    </li>
+</ul>
+<br>
 
-<%= link_to "Checkout", new_order_path %>
 
 <% end %>

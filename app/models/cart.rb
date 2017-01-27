@@ -14,15 +14,27 @@ class Cart < ActiveRecord::Base
     has_many :products, through: :items
 
 
-    def subtotal
-      sum = 0
+    # LOGIC
+  def subtotal
+    sum = 0
 
-      items.each do |item|
-        sum += item.subtotal
-      end
-
-      sum
+    items.each do |item|
+      sum += item.subtotal
     end
 
+    sum
+  end
+
+  def total
+    subtotal + (subtotal * tax) + shipping
+  end
+
+  def total_quantity
+    sum = 0
+    items.each do |item|
+      sum += item.quantity
+    end
+    sum
+  end
 
 end
