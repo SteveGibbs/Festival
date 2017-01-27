@@ -1,0 +1,29 @@
+<%=form_for @order do |f| %>
+
+<div class="row">
+<div class="col-5 right">
+<span>Name</span>
+</div>
+<div class="col-7 left" >
+<%= f.text_field :name, :required => true %>
+</div>
+</div>
+<div class="row">
+<div class="col-5 right">
+    <span>Address</span>
+</div>
+<div class="col-7 left" >
+<%= f.text_field :address1, :required => true %>
+</div>
+</div>
+<div class="row">
+<div class="col-5 right">
+    <span>Order Status</span>
+</div>
+<div class="col-7 left" >
+<%= f.select :status,["in progress","Paid","Shipped"] %>
+</div>
+</div>
+
+        <%= f.submit "Submit", :class=> "case3a"%>
+        <% end %>

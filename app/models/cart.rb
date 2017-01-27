@@ -10,4 +10,19 @@
 #
 
 class Cart < ActiveRecord::Base
+  has_many :items, -> { order 'created_at asc'}
+    has_many :products, through: :items
+
+
+    def subtotal
+      sum = 0
+
+      items.each do |item|
+        sum += item.subtotal
+      end
+
+      sum
+    end
+
+
 end

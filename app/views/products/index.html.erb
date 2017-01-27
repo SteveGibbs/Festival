@@ -8,5 +8,5 @@
 <%=number_to_currency(item.price)%>
 <br>
 <%= button_to "Admin Edit", edit_product_path(item), method: :get %>
-<%#=button_to "Buy", items_path(:product_id => item.id)%>
+<%=button_to "Buy", items_path(:product_id => item.id)%>
 <%end%>

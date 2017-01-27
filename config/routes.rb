@@ -20,6 +20,13 @@ Rails.application.routes.draw do
 
   get 'pages/food'
 
+  get 'carts/:id' => 'carts#show', as: 'cart'
+  delete 'carts/:id' => 'carts#destroy'
+
+  post 'items' => 'items#create'
+  get 'items/:id' => 'items#show', as: 'item'
+  delete 'items/:id' => 'items#destroy', as: 'item_delete'
+
   resources :products, :orders, :pages
   #
   # get 'orders/index'

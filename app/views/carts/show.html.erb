@@ -1,2 +1,37 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
+<h1>Current Cart</h1>
+
+<p>Cart ID:
+    <%= @cart.id %></p>
+<hr>
+
+<% if @cart.items.length > 0  %>
+<% @cart.items.each do |item| %>
+<ul>
+
+    <li>Product:
+        <%= item.product.product_name %></li>
+    <li>Price:
+        <%=number_to_currency(item.product.price)%></li>
+    <li>Quantity:
+        <%= item.quantity %></li>
+    <li>Product ID:
+        <%= item.product_id %></li>
+
+</ul>
+<!--note there is no order id as order has not been created yet - just items in a shopping cart  -->
+<!-- <li>Historical Price <%=item.historical_price %></li>
+      <li>Historical Quantity <%=item.historical_quantity %></li> -->
+<% end %>
+<ul>
+    <p>Total to Pay:
+        <%= number_to_currency(@cart.subtotal) %></p>
+</ul>
+<br>
+<%= button_to "Continue Shopping", products_path, method: :get, class: 'case3a' %>
+
+<br>
+<%= link_to "Empty cart", cart_path(@cart), method: :delete, data: {confirm: "Are you sure you want to empty your cart?"} %>
+
+<%= link_to "Checkout", new_order_path %>
+
+<% end %>

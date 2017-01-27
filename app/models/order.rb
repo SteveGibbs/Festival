@@ -11,4 +11,15 @@
 #
 
 class Order < ActiveRecord::Base
+  has_many :items, dependent: :destroy
+
+  def subtotal
+        sum = 0
+
+        items.each do |item|
+          sum += item.subtotal
+        end
+
+        sum
+      end
 end

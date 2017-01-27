@@ -1,2 +1,16 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+<h1>Your Order Details</h1>
+
+
+<% @cart.items.each do |item| %>
+
+<ul>
+    <li>Product:
+        <%= item.product.product_name %></li>
+    <li>Price:
+        <%= number_to_currency(item.product.price) %></li>
+    <li>Quantity:
+        <%= item.quantity %></li>
+</ul>
+<% end %>
+
+  <%= link_to "Checkout", orders_path, method: "post" %>
