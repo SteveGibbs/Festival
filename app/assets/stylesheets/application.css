@@ -201,8 +201,6 @@ p {
   }
   p.location {
     font-size: 12px;
-    margin-left: -15%;
-    margin-right: -15%;
   }
   ul.navbar li a {
     padding: 12px 10px;
@@ -257,8 +255,6 @@ p {
   }
   p.location {
     font-size: 9px;
-    margin-left: -15%;
-    margin-right: -15%;
   }
   ul.navbar li a {
     padding: 12px 10px;
