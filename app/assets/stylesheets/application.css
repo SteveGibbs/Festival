@@ -84,7 +84,6 @@ img.main-image {
   width: 100%;
   position: relative;
 }
-
 img.secondary-image {
   text-align: center;
   padding: 0 20%;
@@ -213,13 +212,12 @@ p {
     margin-left: 20%;
     margin-right: 20%;
   }
-/*test for mobile responsiveness*/
+  /*test for mobile responsiveness*/
   img.main-image {
     height: 100%;
     /*width: auto;*/
     object-fit: cover;
-}
-
+  }
   p.main-text {
     font-size: 18px;
   }
@@ -229,6 +227,12 @@ p {
   p.location {
     font-size: 12px;
   }
+  ul.main-list {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   ul.navbar li a {
     padding: 12px 10px;
     /*top and bottom 12px and left and right 10px;*/
