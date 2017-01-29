@@ -60,6 +60,7 @@ footer {
 .main-page {
   display: inline-block;
   width: 100%;
+  height: 100%;
 }
 text.main-banner {
   position: absolute;
@@ -82,6 +83,7 @@ img.main-image {
   width: 100%;
   position: relative;
 }
+
 img.secondary-image {
   text-align: center;
   padding: 0 20%;
@@ -188,8 +190,17 @@ p {
   p.location {
     padding: 0 5%;
   }
+  p.main-text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  img.secondary-image {
+    text-align: center;
+    padding: 0 10%;
+    width: 80vw;
+  }
 }
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 768px) {
   text.main-banner {
     font-size: 30px;
   }
@@ -200,6 +211,11 @@ p {
     font-size: 24px;
     margin-left: 20%;
     margin-right: 20%;
+  }
+/*test for mobile responsiveness*/
+  img.main-image {
+    height: 100%;
+    width: auto;
   }
   p.main-text {
     font-size: 18px;
@@ -246,6 +262,10 @@ p {
   }
   a.btn-buy {
     font-size: 20px;
+  }
+  p.main-text {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media only screen and (max-width: 414px) {
