@@ -232,7 +232,11 @@ p {
     margin-left: 0;
     margin-right: 0;
   }
-
+li.main-page-list {
+  width: 38.33%;
+  margin-left: -6%;
+  margin-right: -6%;
+}
   ul.navbar li a {
     padding: 12px 10px;
     /*top and bottom 12px and left and right 10px;*/
