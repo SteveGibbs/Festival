@@ -54,11 +54,8 @@ footer {
   height: 60px;
   background: -webkit-linear-gradient(lightblue, ivory, pink);
   background: -o-linear-gradient(lightblue, ivory, pink);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(lightblue, ivory, pink);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(lightblue, ivory, pink);
-  /* Standard syntax */
 }
 .main-page {
   display: inline-block;
@@ -66,7 +63,7 @@ footer {
 }
 text.main-banner {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -84,7 +81,6 @@ p.main-banner:hover {
 img.main-image {
   width: 100%;
   position: relative;
-
 }
 img.secondary-image {
   text-align: center;
@@ -184,6 +180,14 @@ p {
   text.main-banner {
     font-size: 40px;
   }
+  #map {
+    margin: 0 auto;
+    height: 50%;
+    width: 70%;
+  }
+  p.location {
+    padding: 0 5%;
+  }
 }
 @media only screen and (max-width: 736px) {
   text.main-banner {
@@ -240,6 +244,9 @@ p {
   ul#myNavBar {
     background-color: white;
   }
+  a.btn-buy {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 414px) {
   text.main-banner {
@@ -272,5 +279,12 @@ p {
   }
   a.main-list {
     font-size: 10px;
+  }
+  a.btn-buy {
+    font-size: 12px;
+  }
+  p.main-text {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
