@@ -217,9 +217,9 @@ p {
   img.main-image {
     height: 100%;
     /*width: auto;*/
-    /*object-fit: cover;*/
+    object-fit: cover;
 }
-  }
+
   p.main-text {
     font-size: 18px;
   }
