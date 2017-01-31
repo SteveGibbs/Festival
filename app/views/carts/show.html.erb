@@ -16,7 +16,7 @@
         <%= item.quantity %></li>
     <!-- <li>Product ID:
         <%#= item.product_id %></li> -->
-
+<br>
     <li class="cart"><%= link_to "+", item_add_path(:id => item), method: :post, :class=>"main-list cart-1" %></li>
     <li><%= link_to "-", item_reduce_path(:id => item), method: :post, :class=>"main-list cart-1" %></li>
     <li><%= link_to "Remove", item_path(item), method: :delete, :class=>"main-list cart-1" %></li>
@@ -45,7 +45,13 @@
         <%= button_to "Empty cart", cart_path(@cart), method: :delete, data: {confirm: "Are you sure you want to empty your cart?"}, class: 'btn-shop' %>
     </li>
 </ul>
-<br>
 
+<br>
+<div class="footer-push">
+</div>
+
+</div>
+
+</div>
 
 <% end %>

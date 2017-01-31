@@ -181,6 +181,10 @@ img.autoplay {
   padding: 0 10px;
   color: darkslategray;
 }
+
+.footer-push{
+  margin-top: 40%;
+}
 p {
   margin-left: 10%;
   margin-right: 10%;

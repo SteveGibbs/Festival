@@ -9,18 +9,36 @@ class OrdersController < ApplicationController
   end
 
   def create
-      items = @current_cart.items
-      @order = Order.new
-      items.each do |item|
+      @order = Order.new(order_params)
+      # We want to pass in all the cart items to the order model
+      @current_cart.items.each do |item|
         @order.items << item
-        item.cart_id = nil
+        # item.cart_id = nil
       end
 
-      if @order.save
-        session[:order_id] = @order.id
-      end
+      @order.save
+      # Store the order id in a session
+      session[:order_id] = @order.id if @order.save
+      # Cart.destroy(session[:cart_id])
+      # session[:cart_id] = nil
+
       redirect_to orders_path
     end
+
+
+  # def create
+  #     items = @current_cart.items
+  #     @order = Order.new
+  #     items.each do |item|
+  #       @order.items << item
+  #       item.cart_id = nil
+  #     end
+  #
+  #     if @order.save
+  #       session[:order_id] = @order.id
+  #     end
+  #     redirect_to orders_path
+  #   end
 
     def edit
       @order = Order.find(params[:id])

@@ -2,11 +2,11 @@
 
 
 <span>Name</span>
-<%= f.text_field :name, :required => true %>
+<%= f.text_field :name, :required => true, :autofocus => true %>
     <span>Address</span>
 <%= f.text_field :address1, :required => true %>
-    <span>Order Status</span>
-<%= f.select :status,["in progress","Paid","Shipped"] %>
+    <!-- <span>Order Status</span> -->
+<%#= f.select :status,["in progress","Paid","Shipped"] %>
 
-        <%= f.submit "Submit", :class=> "order-form"%>
+        <%= f.submit "Checkout", :class=> "btn-buy"%>
         <% end %>
